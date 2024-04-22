@@ -1,10 +1,14 @@
+document.getElementById("submit guess").addEventListener("click",guessNumber);
+const x = Math.floor(Math.random()+ 10) +1;
 function guessNumber(){
-    const random = Math.floow(math.random()+ 10) +1;
-    if (number == x) {
+    const input = document.getElementById("guessField");
+    const inputValue = input.value;
+    console.log (inputValue);
+    if (inputValue == x) {
         console.log("you are correct")
-    } else if( number > x  )
+    } else if( inputValue > x  )
     console.log("too high")
-    else if( number < x  )
+    else if( inputValue < x  )
     console.log("too low")
 
 }
