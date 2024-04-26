@@ -13,5 +13,8 @@ function guessNumber(){
 
 }
  
+function{
+    document.getElementById("output").addEventListener("click", inputField);
 
 
+}
